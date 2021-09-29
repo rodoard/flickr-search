@@ -1,0 +1,49 @@
+
+#error {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-style: italic;
+    color: red;
+}
+#more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  height:100vh;
+}
+
+.thumbs {
+  margin:20px;
+   overflow: hidden;
+   height:90vh;
+  overflow-y: scroll;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  padding: 10px;
+}
+.shadowed-text {
+  text-shadow: 0 3px 4px rgb(0 0 0 / 70%);
+}
+.grid-item {
+  font-size: 30px;
+  text-align: center;
+}
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.image {
+  position: relative;
+  text-align: center;
+  color: white;
+}

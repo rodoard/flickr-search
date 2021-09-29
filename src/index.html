@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title>Flickr Search</title>
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+      <link rel="stylesheet" href="./assets/css/grid.css">
+
+    <style>
+      body {
+        background-color: #eee;
+      }
+    </style>
+  <head>
+  <body>
+    <h1>Flickr Search</h1>
+
+    <div>
+      <input id="search" type='text' name='search'>
+      <button id="go" class='go'>Go</button>
+    </div>
+
+    <div id="error"></div>
+    <div id="thumbs" class='thumbs'>
+    </div>
+    
+    <script src="./index.js"></script>
+    <script>
+      const key = '4e258a4396bf5ba0448b2e2fe574034e'
+      const flickrAPI = 'https://api.flickr.com/services/rest/'
+       
+      InitFlickrSearch({key, apiUrl:flickrAPI})
+    </script>
+  </body>
+</html>
